@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
+    height: 100vh;
+    background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-attachment: fixed;
+    font-family: 'Kumbh Sans', sans-serif;
+    min-width: 1175px;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    height: 500px;
+    min-width: 830px;
+    width: 80vw;
+}
+
+.bg{
+    width: 50%;
+    background-image: url('./images/bg-pattern-desktop.svg');
+    background-position: left -50px top 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.box{
+    position: absolute;
+    left: 50px;
+    top: 335px;
+    z-index: 1;
+}
+
+.woman{
+    position: absolute;
+    left: 80px;
+    top: 200px;
+}
+
+.text-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-right: 5vw;
+}
+
+.text{
+    height: fit-content;
+}
+
+.button{
+    font-size: 1.25rem;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 0px;
+    color: hsl(240, 6%, 50%);
+    width: fit-content;
+    cursor: pointer;
+}
+
+.button img{
+    margin-right: 0px;
+    float: auto;
+}
+
+
+.faq{
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s;
+    font-weight: 400;
+    font-size: 0.75rem;
+    margin-bottom: -5px;
+}
+
+.attribution{ 
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+.attribution a{ 
+    color: rgb(100, 100, 100); 
+    text-decoration: none;
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.text > div{
+    width: 100%;
+}
+
+.titleimg{
+    transition: transform 0.3s;
+    height: 16px;
+    padding-left: 6px;
+}
+
+.button:hover{
+    font-weight: 700;
+    color: hsl(237, 12%, 33%);
+}
+
+.button:hover .titleimg{
+    transform: rotate(180deg);
+}
